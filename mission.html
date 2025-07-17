@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Mission | APESE ERE</title>
+  <link rel="stylesheet" href="mission.css" />
+</head>
+<body>
+  <nav class="mission-nav">
+  <div class="nav-logo">APESE ERE</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+
+
+  <header class="hero">
+    <h1>Our Mission</h1>
+    <p>Guided by purpose. Empowering youth. Transforming communities.</p>
+  </header>
+
+  <section class="intro">
+    <div class="intro-box">
+      <h2>Our Commitment</h2>
+      <p>APESE ERE is committed to creating transformative opportunities for youth across Turkana by enabling them to lead, innovate, and empower their communities. We believe in action-driven mission work.</p>
+    </div>
+    <div class="intro-box">
+      <h2>What Drives Us</h2>
+      <p>We are driven by the belief that every young person holds the power to change their world. Our mission is grounded in sustainability, equity, and social transformation.</p>
+    </div>
+    <div class="intro-box">
+      <h2>Strategic Focus</h2>
+      <p>Our mission is operationalized through community-led initiatives in agriculture, technology, education, health, and youth leadership development.</p>
+    </div>
+  </section>
+
+  <section class="core-values">
+    <h2>Our Guiding Values</h2>
+    <div class="values-grid">
+      <div class="value">Inclusivity</div>
+      <div class="value">Empathy</div>
+      <div class="value">Innovation</div>
+      <div class="value">Sustainability</div>
+      <div class="value">Impact</div>
+    </div>
+  </section>
+
+<section class="mission-box-section">
+  <h2>Our Mission Themes</h2>
+
+  <!-- First Row -->
+  <div class="mission-box-container">
+    <div class="mission-box-item" onclick="openMissionModal('research')"><h3>Research</h3></div>
+    <div class="mission-box-item" onclick="openMissionModal('innovate')"><h3>Innovate</h3></div>
+    <div class="mission-box-item" onclick="openMissionModal('support')"><h3>Support</h3></div>
+    <div class="mission-box-item" onclick="openMissionModal('empower')"><h3>Empower</h3></div>
+  </div>
+
+  <!-- Second Row -->
+  <div class="mission-box-container">
+    <div class="mission-box-item" onclick="openMissionModal('opportunities')"><h3>Opportunities</h3></div>
+    <div class="mission-box-item" onclick="openMissionModal('education')"><h3>Education</h3></div>
+    <div class="mission-box-item" onclick="openMissionModal('health')"><h3>Health</h3></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="mission-modal" class="mission-modal">
+    <div class="mission-modal-content">
+      <span class="mission-close" onclick="closeMissionModal()">&times;</span>
+      <img id="mission-modal-img" src="prog3.jpg" alt="Theme Image" />
+      <div id="mission-modal-text" class="mission-modal-text"></div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="team-section">
+    <h2>Mission Leads</h2>
+    <div class="team-grid">
+      <div class="member">
+        <img src="francis.jpg" alt="Director" />
+        <h4>FRANCIS NGIKITO</h4>
+        <p>Mission Director</p>
+      </div>
+      <div class="member">
+        <img src="etash2.PNG" alt="Field Coordinator" />
+        <h4>Julius Etabo</h4>
+        <p>Field Coordinator</p>
+      </div>
+      <div class="member">
+        <img src="mission3.jpg" alt="Youth Engagement Lead" />
+        <h4>Kai Idoko</h4>
+        <p>Project Cordinator</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <h2>Mission Partners</h2>
+    <div class="partner-logos">
+      <img src="global.PNG" alt="GLOBAL FUND ">
+      <img src="redcross.PNG" alt="RED CROSS">
+      <img src="ministry.PNG" alt="HEALTH MINISTRY">
+      <img src="AIC.PNG" alt="AIC HEALTH MINISTRY">
+    </div>
+  </section>
+
+  <section class="impact-stories">
+    <h2>Impact Stories</h2>
+    <div class="stories-grid">
+      <div class="story">
+        <h4>Joseph's Journey</h4>
+        <p>From a remote village to leading a youth cooperative, Joseph's life changed through our youth skills training program.</p>
+      </div>
+      <div class="story">
+        <h4>Empowering Amina</h4>
+        <p>Amina now owns a thriving tailoring business after completing our Women in Business training.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="volunteer-call">
+    <h2>Get Involved</h2>
+    <p>Join us as a volunteer, mentor, or partner. Help us make a lasting impact across Kenya.</p>
+    <a href="contact.html" class="cta-btn">Become a Volunteer</a>
+  </section>
+
+  <section class="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h4>How can I join APESE ERE programs?</h4>
+      <p>Visit our contact page or attend any of our scheduled forums near you to get started.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Is APESE ERE a registered organization?</h4>
+      <p>Yes, APESE ERE is registered under the NGO Coordination Board of Kenya.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-columns">
+      <div>
+        <h3>APESE ERE</h3>
+        <p>Mission-driven transformation. Youth-powered solutions.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p><a href="mailto:support@example.com">apeseere196@gmail.com</a></p>
+        <p>Phone: +254 7250 22 699</p>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 APESE ERE. All rights reserved.</p>
+  </footer>
+<script src="mission.js"></SCRipt>
+</body>
+</html>

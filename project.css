@@ -1,0 +1,95 @@
+body {
+      display: flex;
+      font-family: Arial, sans-serif;
+    }
+    .sidebar {
+      width: 220px;
+      background: #f0f0f0;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      max-height: 100vh;
+      overflow-y: auto;
+    }
+    .sidebar h2 {
+      color: green;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 10px 0;
+    }
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .sidebar ul li a:hover {
+      background-color: #e0f5e0;
+      color: green;
+    }
+    .note-section, .prelogin-section, .form-section {
+      display: none;
+      padding: 20px;
+      flex-grow: 1;
+    }
+    .note-section.active, .prelogin-section.active, .form-section.active {
+      display: block;
+    }
+    .note-card {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-left: 4px solid green;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+    .form-card {
+      display: block;
+      text-align: center;
+      padding: 15px;
+      background-color: #e6f5e6;
+      color: #333;
+      text-decoration: none;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .form-card:hover {
+      background-color: #d2f0d2;
+      color: green;
+    }
+    .prelogin-box {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .prelogin-box h2 {
+      text-align: center;
+      color: green;
+    }
+    .prelogin-box form input, .prelogin-box form button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .prelogin-box form button {
+      background-color: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .prelogin-box form button:hover {
+      background-color: darkgreen;
+    }

@@ -1,0 +1,170 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .nav-header {
+      background: white;
+      border-bottom: 2px solid #ffa000;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+    }
+    .nav-logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #f57c00;
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-menu li a {
+      text-decoration: none;
+      color: #0288d1;
+      font-weight: bold;
+    }
+    .donation-container {
+      max-width: 700px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .subtext {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    .donation-type {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+    .type-btn {
+      padding: 10px 20px;
+      border: none;
+      background: #e0e0e0;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .type-btn.active {
+      background: #0288d1;
+      color: white;
+    }
+    .amount-display {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    #amountSlider {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .purpose-section, .cover-fees {
+      margin: 20px 0;
+    }
+    .bank-info, .mpesa-info {
+      background: #f1f1f1;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    h3 {
+      margin-top: 0;
+      color: #0288d1;
+    }/* Base styling - mobile-first approach */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.navbar, .donation-container, .footer-columns {
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding-left: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.donation-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.amount-display h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+/* Responsive layout for tablet and desktop */
+@media (min-width: 600px) {
+  .nav-menu {
+    justify-content: flex-end;
+  }
+
+  .donation-type {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1024px) {
+  .donation-container {
+    padding: 3rem;
+  }
+
+  .amount-display h1 {
+    font-size: 2.5rem;
+  }
+
+  .nav-logo {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="mission.css">
+</head>
+<style>
+
+
+
+
+  /* Mission Box Container */
+.mission-box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+/* Individual Mission Box */
+.mission-box-item {
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 20px;
+  width: 160px;
+  height: 180px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mission-box-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Mission Box Icon */
+.mission-box-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* Mission Box Heading */
+.mission-box-item h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Modal Overlay */
+.mission-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0,)
+}
+</style>
+<body>
+  <!-- First Row -->
+<div class="mission-box-container">
+  <div class="mission-box-item" onclick="openMissionModal('research')">
+    <img src="prog1.jpg" alt="Research Icon" />
+    <h3>Research</h3>
+  </div>
+  <div class="mission-box-item" onclick="openMissionModal('innovate')">
+    <img src="icons/innovate-icon.png" alt="Innovate Icon" />
+    <h3>Innovate</h3>
+  </div>
+  <div class="mission-box-item" onclick="openMissionModal('support')">
+    <img src="icons/support-icon.png" alt="Support Icon" />
+    <h3>Support</h3>
+  </div>
+  <div class="mission-box-item" onclick="openMissionModal('empower')">
+    <img src="icons/empower-icon.png" alt="Empower Icon" />
+    <h3>Empower</h3>
+  </div>
+</div>
+
+<!-- Second Row -->
+<div class="mission-box-container">
+  <div class="mission-box-item" onclick="openMissionModal('agriculture')">
+    <img src="icons/agriculture-icon.png" alt="Agriculture Icon" />
+    <h3>Agriculture</h3>
+  </div>
+  <div class="mission-box-item" onclick="openMissionModal('education')">
+    <img src="icons/education-icon.png" alt="Education Icon" />
+    <h3>Education</h3>
+  </div>
+  <div class="mission-box-item" onclick="openMissionModal('health')">
+    <img src="icons/health-icon.png" alt="Health Icon" />
+    <h3>Health</h3>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="mission-modal" class="mission-modal">
+  <div class="mission-modal-content">
+    <span class="mission-close" onclick="closeMissionModal()">&times;</span>
+    <img id="mission-modal-img" src="" alt="Theme Image" />
+    </div>
+    </div>
+
+</body>
+</html>

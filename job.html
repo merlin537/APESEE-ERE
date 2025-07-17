@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Portal - APESE ERE</title>
+  <link rel="stylesheet" href="job.css">
+</head>
+
+<body>
+  <!-- Header Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">APESE ERE</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Forms ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="job_form.pdf" download>Job Forms</a></li>
+<li><a href="internship_form.pdf" download>Internship Forms</a></li>
+<li><a href="volunteer_form.pdf" download>Volunteer Forms</a></li>
+
+          </ul>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Job Header / Summary Area -->
+  <section class="job-header">
+    <div class="job-info">
+      <h1>Your Dream Job is Waiting</h1>
+      <p class="job-type">Web Designer</p>
+      <span class="availability">Still Available</span>
+      <p class="deadline">Deadline: July 31, 2025</p>
+    </div>
+
+    <!-- User Form -->
+   <!-- User Form -->
+<form class="job-form" action="https://formspree.io/f/mkgzwpwd" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="text" name="phone" placeholder="Phone Number" required>
+  <textarea name="message" placeholder="Why are you interested?" required></textarea>
+  <button type="submit">Apply Now</button>
+</form>
+
+
+  <!-- Recent and Featured Jobs Section -->
+  <section class="job-listings">
+    <div class="recent-jobs">
+      <h2>Recent Jobs</h2>
+      <ul>
+  <li>
+    <span class="job-title">SECRETARY</span>
+    <span class="company">Ministry of Health</span>
+    <span class="location">Nairobi, Kenya</span>
+    <span class="salary">Ksh 68,000</span>
+    <span class="badge full-time">Full-time</span>
+  </li>
+  <li>
+    <span class="job-title">ICT OFFICER</span>
+    <span class="company">Egerton University</span>
+    <span class="location">Nakuru, Kenya</span>
+    <span class="salary">Ksh 105,000</span>
+    <span class="badge freelance">Freelance</span>
+  </li>
+</ul>
+
+      <button class="show-more">Show More Jobs</button>
+    </div>
+
+    <div class="featured-job">
+      <h2>Featured Job</h2>
+<img src="prog4.jpg" alt="Team working">
+<div class="featured-info">
+  <h3>ICT Officer</h3>
+  <p>APESE ERE</p>
+  <p>📍 TURKANA | 💼 Freelance | 💰 Ksh 10,000</p>
+  <p>Provide technical support, manage systems and ensure network reliability within the university's ICT department.</p>
+</div>
+
+    </div>
+  </section>
+</body>
+</html>

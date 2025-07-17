@@ -1,0 +1,314 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* Job Header Section */
+.job-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url('banner.jpg') center/cover no-repeat;
+  padding: 100px 20px;
+  color: rgb(63, 36, 131);
+  flex-wrap: wrap;
+}
+
+.job-info {
+  text-align: left;
+}
+
+.job-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.job-type {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.availability {
+  color: #00ff90;
+  font-weight: 600;
+}
+
+.deadline {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.job-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  color: #333;
+}
+
+.job-form input,
+.job-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.job-form button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Job Listings Section */
+.job-listings {
+  display: flex;
+  padding: 50px 20px;
+  gap: 40px;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.recent-jobs,
+.featured-job {
+  flex: 1;
+  min-width: 300px;
+}
+
+.recent-jobs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-jobs li {
+  display: flex;
+  flex-direction: column;
+  background: #f7fafd;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-left: 4px solid #007bff;
+  border-radius: 5px;
+}
+
+.recent-jobs .job-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.recent-jobs .badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  width: fit-content;
+}
+
+.badge.full-time { background: #28a745; }
+.badge.freelance { background: #17a2b8; }
+.badge.part-time { background: #ffc107; }
+.badge.temporary { background: #dc3545; }
+
+.show-more {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.featured-job img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.featured-info {
+  background: #f0f8ff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Navigation Bar Styles */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  transition: color 0.3s;
+  display: inline-block;
+}
+
+.nav-links a:hover {
+  color: #ffdd57;
+}
+
+/* Dropdown Styles */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  color: #333;
+  top: 32px;
+  left: 0;
+  padding: 10px 0;
+  list-style: none;
+  min-width: 160px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 8px 15px;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f4f4f4;
+}
+/* Base styling - mobile-first approach */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.navbar, .donation-container, .footer-columns {
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding-left: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.donation-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.amount-display h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+/* Responsive layout for tablet and desktop */
+@media (min-width: 600px) {
+  .nav-menu {
+    justify-content: flex-end;
+  }
+
+  .donation-type {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1024px) {
+  .donation-container {
+    padding: 3rem;
+  }
+
+  .amount-display h1 {
+    font-size: 2.5rem;
+  }
+
+  .nav-logo {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>APESE ERE - Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="project.css">
+  
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>Project Menu</h2>
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="contact.html">📞 Contact</a></li>
+    <li><a onclick="showSection('forms')">📝 Employee Forms</a></li>
+    <li><a onclick="showSection('notes')">📚 Notes</a></li>
+    <li><a onclick="showSection('admin')">🔐 Admin Pre-Login</a></li>
+    <li><a onclick="showSection('member')">👥 Member Pre-Login</a></li>
+  </ul>
+</div>
+
+<div id="forms" class="form-section active">
+  <h2>Downloadable Employee Forms</h2>
+  <div class="form-grid">
+    <a href="forms/leave-request.docx" class="form-card" download><i class="fas fa-calendar-alt"></i><br>Leave Request</a>
+    <a href="forms/incident-report.docx" class="form-card" download><i class="fas fa-exclamation-triangle"></i><br>Incident Report</a>
+    <a href="forms/time-sheet.xlsx" class="form-card" download><i class="fas fa-clock"></i><br>Time Sheet</a>
+    <a href="forms/travel-request.pdf" class="form-card" download><i class="fas fa-plane-departure"></i><br>Travel Request</a>
+    <a href="forms/training-feedback.docx" class="form-card" download><i class="fas fa-comments"></i><br>Training Feedback</a>
+    <a href="forms/equipment-request.docx" class="form-card" download><i class="fas fa-tools"></i><br>Equipment Request</a>
+    <a href="forms/overtime-approval.docx" class="form-card" download><i class="fas fa-business-time"></i><br>Overtime Approval</a>
+    <a href="forms/expense-claim.xlsx" class="form-card" download><i class="fas fa-money-bill-wave"></i><br>Expense Claim</a>
+    <a href="forms/performance-review.docx" class="form-card" download><i class="fas fa-chart-line"></i><br>Performance Review</a>
+    <a href="forms/job-application.docx" class="form-card" download><i class="fas fa-user-plus"></i><br>Job Application</a>
+    <a href="forms/exit-interview.docx" class="form-card" download><i class="fas fa-door-open"></i><br>Exit Interview</a>
+    <a href="forms/confidentiality-agreement.pdf" class="form-card" download><i class="fas fa-file-contract"></i><br>Confidentiality Agreement</a>
+    <a href="forms/sick-leave.docx" class="form-card" download><i class="fas fa-notes-medical"></i><br>Sick Leave Form</a>
+    <a href="forms/asset-transfer.pdf" class="form-card" download><i class="fas fa-truck-loading"></i><br>Asset Transfer</a>
+    <a href="forms/meeting-minutes-template.docx" class="form-card" download><i class="fas fa-handshake"></i><br>Meeting Minutes</a>
+    <a href="forms/promotion-request.docx" class="form-card" download><i class="fas fa-arrow-up"></i><br>Promotion Request</a>
+    <a href="forms/staff-evaluation.docx" class="form-card" download><i class="fas fa-poll"></i><br>Staff Evaluation</a>
+    <a href="forms/onboarding-checklist.pdf" class="form-card" download><i class="fas fa-check-square"></i><br>Onboarding Checklist</a>
+  </div>
+</div>
+
+<div id="notes" class="note-section">
+  <h2>Program Notes</h2>
+  <div class="note-card">
+    <h3>GBV - Gender-Based Violence</h3>
+    <h4>Community Sensitization</h4>
+    <p>Community sensitization campaigns were launched in March to raise awareness on GBV across Turkana. Sessions included survivors’ stories, legal rights education, and reporting mechanisms.</p>
+  </div>
+  <div class="note-card">
+    <h3>PrEP - Pre-Exposure Prophylaxis</h3>
+    <h4>Targeted Outreach</h4>
+    <p>Youth-focused outreach began in April targeting high-risk groups. Mobile clinics distributed materials and provided one-on-one counseling.</p>
+  </div>
+  <div class="note-card">
+    <h3>PEP - Post-Exposure Prophylaxis</h3>
+    <h4>Emergency Kit Distribution</h4>
+    <p>APESE ERE distributed PEP kits to 4 key health facilities in Lodwar, Lokichar, Kakuma, and Kalokol. These kits are critical for timely GBV response.</p>
+  </div>
+  <div class="note-card">
+    <h3>Life Skills</h3>
+    <h4>Mentorship Program</h4>
+    <p>Weekly mentorship sessions are ongoing in Lodwar secondary schools. Topics include goal-setting, conflict resolution, career paths, and resilience building.</p>
+  </div>
+  <div class="note-card">
+    <h3>Healthy & Unhealthy Relationships</h3>
+    <h4>School-Based Discussions</h4>
+    <p>Discussion forums were launched in 5 schools, focusing on identifying red flags in relationships, building trust, and preventing emotional abuse among adolescents.</p>
+  </div>
+</div>
+
+<div id="admin" class="prelogin-section">
+  <div class="prelogin-box">
+    <h2>Admin Pre-Login</h2>
+    <form id="adminForm" action="https://script.google.com/macros/s/AKfycbymuBkURCsSH2ZrotXTTe0WKnPilk6iWO_dn9kzJagqFbD3FefKmpPi2s87Vhv154ga/exec" method="POST" target="_blank">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Admin Email" required>
+      <input type="password" name="code" placeholder="Admin Access Code" required>
+      <button type="submit">Enter Admin Panel</button>
+    </form>
+  </div>
+</div>
+
+<div id="member" class="prelogin-section">
+  <div class="prelogin-box">
+    <h2>Member Pre-Login</h2>
+    <form id="memberForm" action="https://script.google.com/macros/s/YOUR_MEMBER_SCRIPT_ID/exec" method="POST" target="_blank">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <button type="submit">Enter Members Page</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  function showSection(id) {
+    const sections = document.querySelectorAll(".form-section, .note-section, .prelogin-section");
+    sections.forEach(section => section.classList.remove("active"));
+    document.getElementById(id).classList.add("active");
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - APESE ERE</title>
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+</head>
+<body>
+  <header class="fixed-header">
+    <nav>
+      <div class="logo">APESE ERE</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Empowering Indigenous Girls</h1>
+    <p>APESE ERE is committed to uplifting youth and adolescent girls in Turkana through education, mentorship, and community support.</p>
+    <div class="cta-btns">
+      <a href="about.html">Learn More</a>
+      <a href="donate.html">Donate</a>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat">
+      <h3>77M+</h3>
+      <p>3-Year Budget</p>
+    </div>
+    <div class="stat">
+      <h3>1000+</h3>
+      <p>Youth Empowered</p>
+    </div>
+    <div class="stat">
+      <h3>6+</h3>
+      <p>Active Sub-Counties</p>
+    </div>
+  </section>
+
+  <section class="programs" id="programs">
+    <h2>Our Core Programs</h2>
+    <div class="program-grid">
+      <div class="program">
+        <h3>HIV Prevention & SRHR</h3>
+        <p>Community outreach, health talks and PMTCT awareness.</p>
+      </div>
+      <div class="program">
+        <h3>Career Mentorship</h3>
+        <p>Guidance for in-school and out-of-school youth in Turkana.</p>
+      </div>
+      <div class="program">
+        <h3>Digital Inclusion</h3>
+        <p>Training youth in online freelancing and digital work skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slider-section">
+    <h2>Snapshots of Our Programs</h2>
+    <div class="slider">
+      <img src="children.jpg" class="slide active" alt="Program 1">
+      <img src="prog2.jpg" class="slide" alt="Program 2">
+      <img src="prog1.jpg" class="slide" alt="Program 3">
+      <img src="gatev.jpg" class="slide" alt="Program 4">
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>APESE ERE Youth Empowerment Organization is grassroots, women-led NGO founded in January 2016 and formally registered on 17th November 2017 under the Ministry of Labour and Social Protection in Kenya. Based in Turkana County, our name “Apese Ere” means “Indigenous Girls” in the Turkana language a symbol of our deep commitment to empowering vulnerable adolescent girls and youth in marginalized communities.</p>
+      <p>•	Headquarters: Turkana Central
+•	Active Reach: Turkana Central and Loima Sub-counties
+•	Expansion Capacity: Turkana West, Lokichoggio, Turkana North, Turkana East, and Turkana South
+</p>
+      </div>
+      <div class="about-image">
+        <img src="francis.jpg" alt="C.E.O Photo" />
+        <p><strong>Elim Francis Ngikito</strong><br/>Organization Chairperson</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const slides = document.querySelectorAll(".slide");
+      let slideIndex = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove("active");
+          if (i === index) slide.classList.add("active");
+        });
+      }
+
+      function nextSlide() {
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlide(slideIndex);
+      }
+
+      showSlide(slideIndex);
+      setInterval(nextSlide, 5000);
+    });
+  </script>
+   <!-- rest of content remains unchanged -->
+  <section class="section">
+    <h2>Our Approach</h2>
+    <p>We prioritize environmental education, promote sustainable 
+      practices, and raise awareness about the importance of preserving
+       Earth's ecosystems. In Turkana, where communities rely heavily on natural resources for livestock herding and daily sustenance, we work closely with pastoralists, women’s groups, and youth to address environmental degradation and build resilience to climate change. Through tree planting, soil conservation, and water harvesting projects, we promote indigenous ecological practices that align with local livelihoods. We also integrate climate education into schools and community forums, encouraging collective action to protect the fragile Turkana ecosystem, which is increasingly threatened by drought, desertification, and overgrazing.</p>
+  </section>
+
+  <section class="section">
+    <h2>Where We Work</h2>
+    <p>APESE ERE works in Turkana Central, Loima, and is expanding to other sub-counties in Turkana. We engage with diverse stakeholders and marginalized communities to implement scalable and sustainable youth programs. In a region where youth often face barriers such as limited access to formal education, unemployment, and early marriage, our programs focus on equipping them with life skills, leadership training, and opportunities for economic empowerment. We collaborate with elders, schools, and local authorities to ensure cultural sensitivity and community acceptance. By integrating local knowledge and traditions, we create youth-friendly spaces where innovation and indigenous wisdom go hand in hand. Our goal is to raise a generation of confident, informed, and self-reliant young leaders who can shape the future of Turkana.</p>
+  </section>
+
+  <section class="section">
+    <h2>Our People</h2>
+    <div class="team-section">
+      <div class="team-member">
+        <img src="member.jpg" alt="Annie" />
+        <h4>Annie Arrot</h4>
+        <p>Board Chair</p>
+      </div>
+      <div class="team-member">
+        <img src="member2.jpg" alt="Teresa" />
+        <h4>Teresa Lotokos</h4>
+        <p>Boad Member</p>
+      </div>
+      <div class="team-member">
+        <img src="member3.jpg" alt="Kai" />
+        <h4>Kai Idoko</h4>
+        <p>project Coordinator</p>
+      </div>
+      <div class="team-member">
+        <img src="member4.jpg" alt="Victor " />
+        
+        <h4>Victor LUgonzo</h4>
+        <p>M S E Officer</p>
+      </div>
+      <div class="team-member">
+        <img src="member4.jpg" alt="Emmanuel " />
+        
+        <h4>Emmanuel etabo</h4>
+        <p>Finance  Officer</p>
+      </div>
+      <div class="team-member">
+        <img src="member4.jpg" alt="JULIUS  " />
+        
+        <h4>Etabo Julius</h4>
+        <p>Field Officer</p>
+      </div>
+
+      <div style="text-align: center; margin-top: 1rem;">
+  <a href="members.html" style="color: green; text-decoration: underline;">See More</a>
+</div>
+
+    </div>
+  </section>
+
+  <section class="join-us-banner">
+    <h2>Let’s take action today and build a more sustainable world.</h2>
+    <p>We invite you to join us in creating a world where communities thrive in harmony with nature. Your support is vital in helping us make a lasting positive impact.</p>
+    <button>Join Us</button>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 APESE ERE. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+</body>
+</html>

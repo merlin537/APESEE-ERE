@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APESE ERE  - Home</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="APESERE  LOGO">
+        <span class="tagline">youth empowerment organization</span>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="about.html">ABOUT US </a></li>
+          <li><a href="project.html">PROJECTS</a></li>
+          <li><a href="mission.html">MISSION</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="job.html">JOBS</a></li>
+        </ul>
+      </nav>
+      <div class="donate-btn">
+        <a href="donate.html">❤ Donate</a>
+      </div>
+    </div>
+  </header>
+
+ 
+  <section class="updates-slider">
+  <h2>Latest Updates</h2>
+  <div class="slider">
+    <div class="slides">
+      <div class="slide active">
+        <img src="prog3.jpg" alt="Update 1">
+        <div class="caption">Water project launched in Turkana</div>
+      </div>
+      <div class="slide">
+        <img src="prog4.jpg" alt="Update 2">
+        <div class="caption">Health outreach in Loima sub-county</div>
+      </div>
+      <div class="slide">
+        <img src="prog5.jpg" alt="Update 3">
+        <div class="caption">Pastoralists training workshop 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section 1: Programs with Images -->
+<section class="programs">
+  <div class="section-container">
+    <h2>Our Programs</h2>
+    <div class="program-list">
+      <div class="program-card">
+        <img src="edu.PNG" alt="mentorship program">
+        <div class="card-content">
+          <h3>Education Outreach</h3>
+          <p>Providing school supplies, mentorship, and scholarships to youth in underserved areas.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="wash.PNG" alt="wash program">
+        <div class="card-content">
+          <h3>Water Access</h3>
+          <p>Developing boreholes and water purification systems in arid regions.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="live.PNG" alt="livelihood program ">
+        <div class="card-content">
+          <h3>Livelihood Training</h3>
+          <p>Training youth on agribusiness, ICT, and vocational skills to ensure self-reliance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="section-container">
+    <div class="testimonials-intro">
+      <h2>It brings us great joy to know that our work is making a positive impact on the community we serve.</h2>
+      <p>We are changing the world; creating an environment where human and natural habitat thrive one community at a time. <br> Here are some of our impact stories…</p>
+    </div>
+
+    <div class="testimonial-cards">
+      <div class="testimonial">
+        <div class="profile">
+          <img src="test1.jpg" alt="Sarah Oladele">
+          <div>
+            <strong>Sarah Oladele</strong>
+            <p>★★★★★</p>
+          </div>
+        </div>
+        <p>Thank you for sensitizing us on the benefits of trees in our environment... <br> cultivate miracle berry as an alternate income source...</p>
+      </div>
+
+      <div class="testimonial">
+        <div class="profile">
+          <img src="prog3.jpg" alt="Participant">
+          <div>
+            <strong>Participant</strong>
+            <p>★★★★★</p>
+          </div>
+        </div>
+        <p>This program has enabled us to understand what climate change is... I say a big thank you to you and your organization.</p>
+      </div>
+
+      <div class="testimonial">
+        <div class="profile">
+          <img src="prog4.jpg" alt="partcipant">
+          <div>
+            <strong>Shakiru Akinlabi</strong>
+            <p>★★★★★</p>
+          </div>
+        </div>
+        <p>I am happy about what you have trained me on today... I promise to stop deforestation and to learn more...</p>
+      </div>
+
+      <div class="testimonial">
+        <div class="profile">
+          <img src="prog5.jpg" alt="participant">
+          <div>
+            <strong>shane yusuf</strong>
+            <p>★★★★★</p>
+          </div>
+        </div>
+        <p>This is a very laudable program... We would be glad if you continued to involve us in your programs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rise-section">
+  <h2 class="rise-title">Our 4-way Approach for Sustainable Impacts (THE ‘RISE’ MODEL)</h2>
+  <div class="rise-grid">
+    <div class="rise-card" onclick="openModal('research')">
+      <div class="rise-icon">📚</div>
+      <h3>Research</h3>
+      <p>We’re dedicated to understanding our forests better...</p>
+    </div>
+    <div class="rise-card" onclick="openModal('innovate')">
+      <div class="rise-icon">💡</div>
+      <h3>Innovate</h3>
+      <p>We go beyond identifying issues – we find solutions...</p>
+    </div>
+    <div class="rise-card" onclick="openModal('support')">
+      <div class="rise-icon">🤝</div>
+      <h3>Support</h3>
+      <p>We’re dedicated to offering support in the most crucial areas...</p>
+    </div>
+    <div class="rise-card" onclick="openModal('empower')">
+      <div class="rise-icon">🌱</div>
+      <h3>Empower</h3>
+      <p>We believe in the incredible potential of individuals...</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="rise-modal" class="rise-modal">
+  <div class="rise-modal-content">
+    <span class="rise-close" onclick="closeModal()">&times;</span>
+    <img id="rise-modal-img" src="" alt="RISE Modal Image" />
+  </div>
+</div>
+
+<script src="rise-script.js"></script>
+
+
+
+<!-- Section 3: Join Us (with background image optional) -->
+<section class="join-us">
+  <div class="section-container">
+    <h2>Join the Movement</h2>
+    <p>Whether you’re a volunteer, donor, or partner — your contribution makes a real impact.</p>
+    <a href="contact.html" class="join-button">Become a Volunteer</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>APESE ERE</h3>
+      <p>Empowering youth. Transforming communities. Building a better future.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>Contact us at <a href="mailto:support@example.com">apeseere196@gmail.com</a></p>
+      <p>Phone: +254 712 345 678</p>
+      <p>Location: Turkana County, Kenya</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 APESE ERE. All rights reserved.
+  </div>
+  <section class="site-search">
+  <input type="text" id="searchInput" placeholder="Ask us anything...">
+  <button onclick="searchSite()" class="search-btn">
+    🔍
+  </button>
+</section>
+
+</footer>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlide(index) {
+    const slideWidth = slides[0].clientWidth;
+    document.querySelector('.slides').style.transform = `translateX(-${index * slideWidth}px)`;
+    slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 5000); // Change slide every 3 seconds
+</script>
+<script>
+function searchSite() {
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  if (!query) {
+    alert("Please enter something to search.");
+    return;
+  }
+
+  const pages = [
+    { title: "index", url: "index.html" },
+    { title: "About", url: "about.html" },
+    { title: "Mission", url: "mission.html" },
+    { title: "Updates", url: "updates.html" },
+    { title: "Activities", url: "activities.html" }
+  ];
+
+  let found = false;
+  for (let page of pages) {
+    if (page.title.toLowerCase().includes(query)) {
+      window.location.href = page.url;
+      found = true;
+      break;
+    }
+  }
+
+  if (!found) {
+    alert("No matching page found. Try using a different word.");
+  }
+}
+</script>
+
+
+</body>
+</html>
